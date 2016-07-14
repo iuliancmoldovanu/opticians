@@ -1,0 +1,150 @@
+html, body, .container {
+    height: 100%;
+}
+
+/* Reset */
+html, body, h1, p, a, div, section, ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/* Basic */
+body {
+    font: 18px/23px "Cantarell", sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    color: #efecec;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+a {
+    color: tomato;
+}
+a:hover{
+    color: skyblue;
+    text-decoration: no-underline !important;
+}
+p {
+    margin: 0 0 15px 0;
+}
+
+/* Layout */
+
+body{
+    background-image: url("../images/bg.jpg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+}
+
+.container {
+    display: table;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.centerTextBox{
+    max-width: 80%;
+    border: solid 1px black;
+    margin: 0% auto 0%;
+    background-color:rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.centerTextBox ul{
+    list-style-type: none;
+}
+/* Special */
+.button {
+    display: inline-block;
+    padding: 3px 5px;
+    color: tomato;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+
+    .container {
+        position: relative;
+        display: block;
+        float: left;
+        vertical-align: baseline;
+        margin: 0 auto;
+        padding: 80px 0 0 0;
+    }
+
+    body h1 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .content, blockquote {
+        display: inline;
+        margin: 0 auto;
+        padding-top: 80px;
+        vertical-align: baseline;
+    }
+
+    blockquote {
+        width: 150px;
+        margin: 15px auto;
+        font-size: 16px;
+        line-height: 21px;
+        background-color: transparent;
+    }
+
+    blockquote cite {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .button, p {
+        max-width: 150px;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    html, body, .container {
+        height: auto;
+    }
+}

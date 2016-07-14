@@ -1,0 +1,76 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 99;
+}
+
+p.form-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+form.form input[type="text"], form.form input[type="password"],
+form.form input[type="date"], form.form input[type="number"],
+form.form input[type="email"], form.form input[type="time"], form.form textarea {
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.form input[type="submit"] {
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.form input[type="submit"]:hover {
+    transition: background-color 0.5s ease;
+}
+
+.errors {
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .errors {
+        margin-left: 0px;
+    }
+}

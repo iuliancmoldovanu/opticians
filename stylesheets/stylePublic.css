@@ -1,0 +1,25 @@
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    z-index: 9999;
+    position: fixed;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    border: 1px solid tomato;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 3px;
+    padding: 2px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
